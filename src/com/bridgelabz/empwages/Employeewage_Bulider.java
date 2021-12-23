@@ -6,29 +6,32 @@ public class Employeewage_Bulider {
 		System.out.println("Welcome to EmployeeWage Programme");
 		int is_fulltime_present=1;
 		int is_parttime_present=2;
-		int daily_wage;
 		int wage_pr_hr=20;
-		int working_hr;
+		int working_hr=0;
+		int total_working_hr = 0;
 		int days_in_month=20;
+		int max_working_hrs = 100;
 		int monthly_total_wage=0;
 		int daily_wage_array[] = new int[20];
 		int emp_check=(int)(Math.floor(Math.random()*10))%3;
-		for (int i = 0; i < days_in_month; i++) {
+		for (int i=0; i<days_in_month && total_working_hr<max_working_hrs; i++) {
 		switch(emp_check) {
 		     case 1:
-		    	 System.out.println("Employee is full time present");
+		    	 
 		    	 working_hr=8;
+		    	 break;
 		    	 
 		     case 2:
-		    	 System.out.println("Employee is part time present");
+		    	
 		    	 working_hr=4;
+		    	 break;
 		    	 
 		     default:
-		    	 System.out.println("Employee is Absent");
+		    	 
 		    	 working_hr=0;
 		}
-		
-        daily_wage=working_hr * wage_pr_hr;
+		total_working_hr += working_hr;
+		daily_wage_array[i]=working_hr * wage_pr_hr;
 		
 		}
 		for (int j = 0; j < days_in_month; j++) {
