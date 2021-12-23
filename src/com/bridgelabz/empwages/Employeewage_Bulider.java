@@ -9,7 +9,11 @@ public class Employeewage_Bulider {
 		int daily_wage;
 		int wage_pr_hr=20;
 		int working_hr;
+		int days_in_month=20;
+		int monthly_total_wage=0;
+		int daily_wage_array[] = new int[20];
 		int emp_check=(int)(Math.floor(Math.random()*10))%3;
+		for (int i = 0; i < days_in_month; i++) {
 		switch(emp_check) {
 		     case 1:
 		    	 System.out.println("Employee is full time present");
@@ -23,10 +27,21 @@ public class Employeewage_Bulider {
 		    	 System.out.println("Employee is Absent");
 		    	 working_hr=0;
 		}
-       daily_wage=working_hr * wage_pr_hr;
-       System.out.println("Employee daily wage is" + daily_wage);
-			
-	      }
-	 }
+		
+        daily_wage=working_hr * wage_pr_hr;
+		
+		}
+		for (int j = 0; j < days_in_month; j++) {
+			int day = j + 1;
+			System.out.println("Day " + day + " wage is " + daily_wage_array[j]);
+			monthly_total_wage = monthly_total_wage + daily_wage_array[j];
+		}
+		System.out.println("\nMonthly wage is " + monthly_total_wage);
+	   
+   	    }
+       
+      }	
+	      
+	
 
 
