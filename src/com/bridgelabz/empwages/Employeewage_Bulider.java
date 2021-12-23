@@ -6,7 +6,6 @@ public class Employeewage_Bulider {
 		System.out.println("Welcome to EmployeeWage Programme");
 		int is_fulltime_present=1;
 		int is_parttime_present=2;
-		int daily_wage;
 		int wage_pr_hr=20;
 		int working_hr;
 		int days_in_month=20;
@@ -16,11 +15,11 @@ public class Employeewage_Bulider {
 		for (int i = 0; i < days_in_month; i++) {
 		switch(emp_check) {
 		     case 1:
-		    	 System.out.println("Employee is full time present");
+		    	
 		    	 working_hr=8;
 		    	 
 		     case 2:
-		    	 System.out.println("Employee is part time present");
+		    	
 		    	 working_hr=4;
 		    	 
 		     default:
@@ -28,7 +27,7 @@ public class Employeewage_Bulider {
 		    	 working_hr=0;
 		}
 		
-        daily_wage=working_hr * wage_pr_hr;
+                int daily_wage_array[i]=working_hr * wage_pr_hr;
 		
 		}
 		for (int j = 0; j < days_in_month; j++) {
