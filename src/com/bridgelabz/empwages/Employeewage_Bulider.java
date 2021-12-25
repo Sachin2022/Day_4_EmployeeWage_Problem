@@ -11,18 +11,18 @@ public class Employeewage_Bulider {
 		int emp_check=(int)(Math.floor(Math.random()*10))%2;
 		if(emp_check==is_present) 
 		{
-			System.out.println("Employee is Present");
-			working_hr=8;
+		      System.out.println("Employee is Present");
+		      working_hr=8;
 		}
 		else 
 		{
 			
-			System.out.println("Employee is Abesent");
-		working_hr=0;
+		     System.out.println("Employee is Abesent");
+		     working_hr=0;
 	   }
 	
-       daily_wage=working_hr * wage_pr_hr;
-       System.out.println("Employee daily wage is" + daily_wage);
+                    daily_wage=working_hr * wage_pr_hr;
+                    System.out.println("Employee daily wage is" + daily_wage);
 			
 	      }
 	 }
