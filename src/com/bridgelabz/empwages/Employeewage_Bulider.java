@@ -19,7 +19,7 @@ public class Employeewage_Bulider {
 			
 		     System.out.println("Employee is Abesent");
 		     working_hr=0;
-	   }
+	        }
 	
                     daily_wage=working_hr * wage_pr_hr;
                     System.out.println("Employee daily wage is" + daily_wage);
