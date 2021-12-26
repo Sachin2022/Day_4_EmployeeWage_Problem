@@ -14,28 +14,28 @@ public class Employeewage_Bulider {
 		int emp_check=(int)(Math.floor(Math.random()*10))%3;
 		for (int i = 0; i < days_in_month; i++) {
 		switch(emp_check) {
-		     case 1:
-		    	
-		    	 working_hr=8;
-		    	 
-		     case 2:
-		    	
-		    	 working_hr=4;
-		    	 
+		     case 1: working_hr=8;
+		     
+		     break;	
+		    
+	             case 2:working_hr=4;
+		     
+		     break;
+		      	 
 		     default:
 		    	 System.out.println("Employee is Absent");
 		    	 working_hr=0;
 		}
 		
-                int daily_wage_array[i]=working_hr * wage_pr_hr;
+                     int daily_wage_array[i]=working_hr * wage_pr_hr;
 		
 		}
-		for (int j = 0; j < days_in_month; j++) {
+		     for (int j = 0; j < days_in_month; j++) {
 			int day = j + 1;
 			System.out.println("Day " + day + " wage is " + daily_wage_array[j]);
 			monthly_total_wage = monthly_total_wage + daily_wage_array[j];
 		}
-		System.out.println("\nMonthly wage is " + monthly_total_wage);
+		     System.out.println("\nMonthly wage is " + monthly_total_wage);
 	   
    	    }
        
