@@ -13,20 +13,20 @@ public class Employeewage_Bulider {
 		switch(emp_check) {
 		     case 1:System.out.println("Employee is full time present");
 		    	    working_hr=8;
-		     break
+		     break;
 		    	 
 		     case 2:System.out.println("Employee is part time present");
 			    working_hr=4;
-		     break
+		     break;
 		    	
-		     default:
-		    	 System.out.println("Employee is Absent");
-		    	 working_hr=0;
-		  }
-                        daily_wage=working_hr * wage_pr_hr;
-                        System.out.println("Employee daily wage is" + daily_wage);
+		     default:System.out.println("Employee is Absent");
+		    	      working_hr=0;
+		    	
+		    }
+                         daily_wage=working_hr * wage_pr_hr;
+                         System.out.println("Employee daily wage is" + daily_wage);
 			
-	         }
-	   }
+	           }
+	     }
 
 
